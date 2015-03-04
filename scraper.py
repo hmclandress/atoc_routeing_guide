@@ -74,7 +74,7 @@ def yellow_pages():
     #
 
     print "Loading yellow pages (permitted route list)"
-    url = "http://iblocks-rg-publication.s3-website-eu-west-1.amazonaws.com/yellow_pages.pdf"
+    url = "http://www.atoc.org/download/clientfiles/files/130913%20-%20Permitted%20Routes%20(Yellow_Pages).pdf"
 
     pdfdata = urllib2.urlopen(url).read()
     print "The pdf file has %d bytes" % len(pdfdata)
