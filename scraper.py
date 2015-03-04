@@ -17,7 +17,7 @@ def pink_pages():
     #
 
     print "Loading pink pages (station to RP mapping)"
-    url = "http://www.atoc.org/clientfiles/File/routeing_point_identifier.pdf"
+    url = "http://iblocks-rg-publication.s3-website-eu-west-1.amazonaws.com/pink_pages.pdf"
 
     pdfdata = urllib2.urlopen(url).read()
     print "The pdf file has %d bytes" % len(pdfdata)
@@ -74,7 +74,7 @@ def yellow_pages():
     #
 
     print "Loading yellow pages (permitted route list)"
-    url = "http://www.atoc.org/clientfiles/File/permitted_route_identifier.pdf"
+    url = "http://iblocks-rg-publication.s3-website-eu-west-1.amazonaws.com/yellow_pages.pdf"
 
     pdfdata = urllib2.urlopen(url).read()
     print "The pdf file has %d bytes" % len(pdfdata)
@@ -110,7 +110,7 @@ def yellow_pages():
     print "Yellow pages done"
 
 def maps():
-    url = "http://www.atoc.org/clientfiles/File/Maps.pdf"
+    url = "https://docs.google.com/viewer?a=v&pid=sites&srcid=ZGVmYXVsdGRvbWFpbnxobWNsYW5kcmVzc3JnfGd4OjNkMGVjMWQ1ZDk0ZTFlOWM"
 
     print "Fetching maps"
     pdfdata = urllib2.urlopen(url).read()
@@ -153,7 +153,7 @@ def maps():
     print "Maps processed"
 
 def rp_table():
-    url = "http://www.atoc.org/clientfiles/File/routeing_points.pdf"
+    url = "http://iblocks-rg-publication.s3-website-eu-west-1.amazonaws.com/blue_pages.pdf"
 
     print "Processing routeing point list"
     pdfdata = urllib2.urlopen(url).read()
